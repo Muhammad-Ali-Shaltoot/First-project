@@ -1,11 +1,20 @@
-void main(){
+void main() {
+  int i = 0;
+  bool x = true;
+  while (x) {
+    switch (i) {
+      case 10:
+        x = false;
+        break;
+      default:
+        print(" hello $i");
+    }
+    i++;
+  }
 
-  int num=12;
-  print(num);
-  printString(name: "Mohamed");
-
+  // printString(name: "Mohamed");
 }
 
-void printString({required String name}){
+void printString({required String name}) {
   print(name);
 }
